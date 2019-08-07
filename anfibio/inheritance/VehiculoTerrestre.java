@@ -1,7 +1,9 @@
 package anfibio.inheritance;
 
+// Clase que representa un Vehículo Terrestre
 public class VehiculoTerrestre {
 
+    private static final String MEDIO = "TIERRA";
     private static final float VELOCIDAD_BASICA = 50f;
     private int numeroDeRuedas;
 
@@ -20,7 +22,12 @@ public class VehiculoTerrestre {
         this.numeroDeRuedas = numeroDeRuedas;
     }
 
-    // cálculo de velocidad
+    // obtener medio sobre el que se desplaza
+    public String getMedio() {
+        return MEDIO;
+    }
+
+    // calcular velocidad
     public float getVelocidad() {
         return VELOCIDAD_BASICA * numeroDeRuedas;
     }

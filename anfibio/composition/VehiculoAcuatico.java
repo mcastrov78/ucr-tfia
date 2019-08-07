@@ -1,7 +1,9 @@
 package anfibio.composition;
 
+// Clase que representa un Vehículo Acuático, es desplazable
 public class VehiculoAcuatico implements ObjetoDesplazable {
 
+    private static final String MEDIO = "AGUA";
     private static final float VELOCIDAD_BASICA = 10f;
     private int numeroDePropelas;
 
@@ -20,7 +22,12 @@ public class VehiculoAcuatico implements ObjetoDesplazable {
         this.numeroDePropelas = numeroDePropelas;
     }
 
-    // cálculo de velocidad
+    // obtener medio sobre el que se desplaza (método de la interfaz)
+    public String getMedio() {
+        return MEDIO;
+    }
+
+    // calcular velocidad (método de la interfaz)
     public float getVelocidad() {
         return VELOCIDAD_BASICA * numeroDePropelas;
     }

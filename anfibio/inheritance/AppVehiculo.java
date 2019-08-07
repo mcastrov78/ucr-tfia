@@ -1,13 +1,18 @@
 package anfibio.inheritance;
 
+// Clase crea y usa vehículos definidos por Herencia
 public class AppVehiculo {
 
     public static void main(String args[]) {
-        Vehiculo1 vehiculo1 = new Vehiculo1("A1", 2);
-        Vehiculo2 vehiculo2 = new Vehiculo2("T1", 4);
+        // un Carro es un Vehículo Terrestre y un Bote es un Vehículo Acuático
+        // esto se define en tiempo de COMPILACIÓN y NO puede ser variado de forma dinámica en EJECUCIÓN
+        Carro carro = new Carro("C1", 4);
+        Bote bote = new Bote("B1", 2);
 
-        System.out.println("Vehiculo1 Acuatico - Placa: " + vehiculo1.getPlaca() + ", Velocidad: " + vehiculo1.getVelocidad());
-        System.out.println("Vehiculo1 Terrestre - Placa: " + vehiculo2.getPlaca() + ", Velocidad: " + vehiculo2.getVelocidad());
+        System.out.println("Carro - Matrícula: " + carro.getMatricula() +
+                ", Medio: " + carro.getMedio() + ", Velocidad: " + carro.getVelocidad());
+        System.out.println("Bote - Matrícula: " + bote.getMatricula() +
+                ", Medio: " + bote.getMedio() + ", Velocidad: " + bote.getVelocidad());
 
         System.exit(0);
     }
