@@ -4,10 +4,10 @@ package anfibio.inheritance;
 public class AppVehiculo {
 
     public static void main(String args[]) {
-        // un Carro es un Vehículo Terrestre y un Bote es un Vehículo Acuático
+        // un carro es un Vehículo Terrestre y un bote es un Vehículo Acuático
         // esto se define en tiempo de COMPILACIÓN y NO puede ser variado de forma dinámica en EJECUCIÓN
-        Carro carro = new Carro("C1", 4);
-        Bote bote = new Bote("B1", 2);
+        VehiculoTerrestre carro = new VehiculoTerrestre("C1", 4);
+        VehiculoAcuatico bote = new VehiculoAcuatico("B1", 2);
 
         System.out.println("Carro - Matrícula: " + carro.getMatricula() +
                 ", Medio: " + carro.getMedio() + ", Velocidad: " + carro.getVelocidad());

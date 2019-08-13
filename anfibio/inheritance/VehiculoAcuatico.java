@@ -1,15 +1,16 @@
 package anfibio.inheritance;
 
 // Clase que representa un Vehículo Acuático
-public class VehiculoAcuatico {
+public class VehiculoAcuatico extends Vehiculo {
 
     private static final String MEDIO = "AGUA";
     private static final float VELOCIDAD_BASICA = 10f;
+
     private int numeroDePropelas;
 
     // constructor
-    public VehiculoAcuatico(int numeroDePropelas) {
-        super();
+    public VehiculoAcuatico(String matricula, int numeroDePropelas) {
+        this.matricula = matricula;
         this.numeroDePropelas = numeroDePropelas;
     }
 

@@ -1,15 +1,16 @@
 package anfibio.inheritance;
 
 // Clase que representa un Vehículo Terrestre
-public class VehiculoTerrestre {
+public class VehiculoTerrestre extends Vehiculo {
 
     private static final String MEDIO = "TIERRA";
     private static final float VELOCIDAD_BASICA = 50f;
+
     private int numeroDeRuedas;
 
     // constructor
-    public VehiculoTerrestre(int numeroDeRuedas) {
-        super();
+    public VehiculoTerrestre(String matricula, int numeroDeRuedas) {
+        this.matricula = matricula;
         this.numeroDeRuedas = numeroDeRuedas;
     }
 
