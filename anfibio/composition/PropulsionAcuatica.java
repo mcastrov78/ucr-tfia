@@ -1,15 +1,15 @@
 package anfibio.composition;
 
-// Clase que representa un Vehículo Acuático, es desplazable
-public class VehiculoAcuatico implements ObjetoDesplazable {
+// Clase que representa un objeto con Propulsión Acuática
+public class PropulsionAcuatica implements Propulsable {
 
     private static final String MEDIO = "AGUA";
     private static final float VELOCIDAD_BASICA = 10f;
+
     private int numeroDePropelas;
 
     // constructor
-    public VehiculoAcuatico(int numeroDePropelas) {
-        super();
+    public PropulsionAcuatica(int numeroDePropelas) {
         this.numeroDePropelas = numeroDePropelas;
     }
 

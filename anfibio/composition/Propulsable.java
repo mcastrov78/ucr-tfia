@@ -1,7 +1,7 @@
 package anfibio.composition;
 
-// Interfaz que define comportamiento de un objeto desplazable en el espacio
-public interface ObjetoDesplazable {
+// Interfaz que define comportamiento de un objeto propulsable
+public interface Propulsable {
 
     // obtener medio sobre el que se desplaza
     String getMedio();

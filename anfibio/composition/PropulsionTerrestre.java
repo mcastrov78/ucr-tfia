@@ -1,15 +1,15 @@
 package anfibio.composition;
 
-// Clase que representa un Vehículo Terrestre, es desplazable
-public class VehiculoTerrestre implements ObjetoDesplazable {
+// Clase que representa un objeto con Propulsión Terrestre
+public class PropulsionTerrestre implements Propulsable {
 
     private static final String MEDIO = "TIERRA";
     private static final float VELOCIDAD_BASICA = 50f;
+
     private int numeroDeRuedas;
 
     // constructor
-    public VehiculoTerrestre(int numeroDeRuedas) {
-        super();
+    public PropulsionTerrestre(int numeroDeRuedas) {
         this.numeroDeRuedas = numeroDeRuedas;
     }
 
