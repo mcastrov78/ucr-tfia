@@ -1,5 +1,9 @@
 package decorator;
 
+/**
+ * TAREA: Agregar/modificar el código necesario para que un tipo de café pueda tener un descuento (por ejemplo del 10%)
+ * y los condimentos tengan el doble que el cafe (20% en este caso) y el precio se calcule de forma apropiada.
+ */
 public class StarbuzzCoffee {
   
   public static void main(String[] args) {
